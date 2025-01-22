@@ -1,0 +1,3 @@
+@shreyas bhai jo bhi pip installations karega mention here so that we can aslo set our systems accoring to it
+pip install flask
+pip install flask-cors
