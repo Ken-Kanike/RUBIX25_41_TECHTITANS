@@ -1,0 +1,117 @@
+
+.dashboard-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+
+.search-input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 50px;
+    border: 2px solid #ccc;
+    width: 300px;  
+    margin-right: 10px;
+    outline: none;
+}
+
+
+.search-btn {
+    padding: 10px 20px;
+    background-color: #854CE6;
+    border: none;
+    border-radius: 25px; 
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-btn:hover {
+    background-color: #5e30b1;
+}
+
+
+.search-btn i {
+    font-size: 18px;
+}
+
+
+.hackathon-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.hackathon-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: auto;
+}
+
+.hackathon-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.hackathon-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.hackathon-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.hackathon-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+.hackathon-card p {
+    font-size: 1rem;
+    color: #666;
+    margin: 0;
+}
+.divider-bar {
+    width: 100%;
+    height: 3px;
+    background-color: #854ce6; 
+    margin: 30px 0; 
+  }
+  
+  .joined-hackathons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .joined-hackathon-item {
+    padding: 15px;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }

@@ -1,0 +1,32 @@
+/* Container Style */
+.signin-container {
+    height: 100vh; /* Full viewport height */
+}
+
+/* Left Section */
+.left-section {
+    flex: 1; /* Takes half the page */
+    background: linear-gradient(135deg, #6c63ff, #836fff); /* Gradient background */
+    color: white;
+}
+
+.logo {
+    max-width: 60%; /* Adjust logo size */
+    height: auto;
+}
+
+/* Right Section */
+.right-section {
+    flex: 1; /* Takes the other half of the page */
+    padding: 20px;
+    background: #f8f9fa; /* Light gray background */
+}
+
+.login-box {
+    width: 80%;
+    max-width: 400px; /* Ensure it looks good on smaller screens */
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
