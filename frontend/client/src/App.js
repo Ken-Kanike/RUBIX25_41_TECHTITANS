@@ -9,6 +9,8 @@ import UserRegister from "./components/Signin/UserRegister";
 import './App.css';
 import AdminRegister from './components/Signin/AdminRegister';
 import Footer from './components/Footer';
+import Hackathon from './components/Hackathon';
+import Register from './components/Register';
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
         <Route path="/user-register" element={<UserRegister />} />
         <Route path="/admin-register" element={<AdminRegister />} />
         <Route path="/admin-dashboard" element={<DashboardAdmin />} />
+        <Route path="/hackathon" element={<Hackathon />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
       <Footer/>
     </Router>

@@ -1,0 +1,28 @@
+.hackathon-admin {
+    padding: 2rem;
+    background-color: #022b3a;
+    color: #e1e5f2;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 2rem auto;
+  }
+  
+  .hackathon-admin section {
+    margin-bottom: 2rem;
+  }
+  
+  .hackathon-admin button {
+    background-color: #5c6b73;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin-right: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .hackathon-admin button:hover {
+    background-color: #253237;
+  }
+  
