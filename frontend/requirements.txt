@@ -1,3 +1,5 @@
-@shreyas bhai jo bhi pip installations karega mention here so that we can aslo set our systems accoring to it
-pip install flask
-pip install flask-cors
+@rishit bhai jo bhi npm i karega mention here so that we can aslo set our systems accoring to it
+npm install web-vitals
+npm install styled-components
+npm install react-router-dom
+
