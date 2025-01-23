@@ -2,4 +2,4 @@
 npm install web-vitals
 npm install styled-components
 npm install react-router-dom
-
+npm install bootstrap // u forgot this bro!

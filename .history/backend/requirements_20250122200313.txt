@@ -1,4 +1,0 @@
-@rishit bhai jo bhi npm i karega mention here so that we can aslo set our systems accoring to it
-npm install web-vitals
-npm install styled-components
-
