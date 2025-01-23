@@ -1,6 +1,6 @@
 import React from "react";
 import "./dashboardUSER.css";
-import Navbar from "../DashboardUnavbar"; // Import Navbar
+// import Navbar from "../DashboardUnavbar"; // Import Navbar
 
 const DashboardUSER = () => {
 
@@ -12,7 +12,7 @@ const DashboardUSER = () => {
 
     return (
         <div>
-            <Navbar/>
+            {/* <Navbar/> */}
             <div className="dashboard-container">
                 
                 <div className="search-container">

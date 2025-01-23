@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+import { Link} from 'react-router-dom'; 
 import "./dashboardUnavbar.css";
 
-const Navbar = () => {
+const UserNavbar = () => {
     const [profileImage, setProfileImage] = useState(null);
 
     const handleImageUpload = (event) => {
@@ -21,6 +22,7 @@ const Navbar = () => {
             <ul className="navbar-links">
                 <li><a href="#dashboard">Dashboard</a></li>
                 <li><a href="#profile">Profile</a></li>
+                <li><Link to="/">Home</Link></li>
             </ul>
 
          
@@ -45,4 +47,4 @@ const Navbar = () => {
     );
 };
 
-export default Navbar;
+export default UserNavbar;

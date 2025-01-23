@@ -1,13 +1,17 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom'; 
 import './navbar.css'; 
+import UserNavbar from "../DashboardUnavbar";
 
 const Navbar = () => {
     const location = useLocation();
 
     const isSigninPage = location.pathname === "/signin";
     const isAdminPage = location.pathname === "/admin-dashboard";
-
+    const isUserPage = location.pathname === "/user-dashboard";
+    if (isUserPage) {
+        return <UserNavbar/>;
+    }
     return (
         <nav className="navbar">
             <div className="navbar-logo">

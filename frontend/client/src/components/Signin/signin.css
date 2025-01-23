@@ -1,4 +1,95 @@
+/* signin.css */
 
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Slide-in animation */
+  @keyframes slideIn {
+    from {
+      transform: translateY(30px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Global sign-in page styles */
+  .signin-page {
+    background-color: #022b3a;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20px;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  /* Sign-in container styles */
+  .signin-container {
+    text-align: center;
+    color: #e1e5f2;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #022b3a;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: slideIn 0.5s ease-out;
+  }
+  
+  /* Header styles */
+  .header {
+    color: #5c6b73;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    animation: fadeIn 0.7s ease-in-out;
+  }
+  
+  /* Container styles */
+  .container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  /* Option card styles */
+  .option-card {
+    background-color: #253237;
+    border-radius: 8px;
+    padding: 20px;
+    width: 200px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .option-card:hover {
+    background-color: #5c6b73;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .option-card h3 {
+    color: #e1e5f2;
+    font-size: 1.25rem;
+  }
+  
+  .option-card p {
+    color: #9db4c0;
+    font-size: 0.875rem;
+  }
+  
+  /* sigin.css
 .signin-container {
     display: flex;
     height: 100vh;
@@ -103,4 +194,4 @@
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
   }
   
-
+ */
