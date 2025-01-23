@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import HomePage from './components/Home';
 import SignInPage from './components/Signin'; 
 import Dashboard from "./components/DashboardUSER";
+import UserRegister from "./components/Signin/UserRegister";
 import './App.css';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<HomePage />} /> 
         <Route path="/signin" element={<SignInPage />} /> 
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/user-register" element={<UserRegister />} />
       </Routes>
     </Router>
   );
