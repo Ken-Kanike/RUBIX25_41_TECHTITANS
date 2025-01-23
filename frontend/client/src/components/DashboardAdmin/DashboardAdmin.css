@@ -1,0 +1,14 @@
+/* Global styles for the dashboard */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Optional styles for the Hackathon Button */
+  button {
+    font-family: 'Arial', sans-serif;
+    transition: all 0.3s ease;
+  }
+  
