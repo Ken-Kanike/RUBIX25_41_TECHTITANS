@@ -8,6 +8,7 @@ import DashboardAdmin from "./components/DashboardAdmin";
 import UserRegister from "./components/Signin/UserRegister";
 import './App.css';
 import AdminRegister from './components/Signin/AdminRegister';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/admin-register" element={<AdminRegister />} />
         <Route path="/admin-dashboard" element={<DashboardAdmin />} />
       </Routes>
+      <Footer/>
     </Router>
   );
 }

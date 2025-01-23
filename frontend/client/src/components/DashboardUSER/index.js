@@ -3,6 +3,7 @@ import "./dashboardUSER.css";
 import Navbar from "../DashboardUnavbar"; // Import Navbar
 
 const DashboardUSER = () => {
+
     const hackathons = [
         { name: "AI Challenge", details: "A hackathon for AI enthusiasts." },
         { name: "Blockchain Dev", details: "Build projects with Blockchain." },
@@ -11,7 +12,7 @@ const DashboardUSER = () => {
 
     return (
         <div>
-            <Navbar />
+            <Navbar/>
             <div className="dashboard-container">
                 
                 <div className="search-container">
