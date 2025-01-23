@@ -12,19 +12,22 @@ export const darkTheme = {
     white: "#FFFFFF",
     black: "#000000",
   };
+
+ export const lightTheme = {
+  bg: "#F4F6F9", // Light background
+  primary: "#007BFF", // Primary color (blue)
+  primaryHover: "#0056b3", // Darker blue for hover
+  white: "#FFFFFF", // White color for buttons and card backgrounds
+  card: "#FFFFFF", // Card background
+  text_primary: "#333333", // Dark text for primary content
+  text_secondary: "#555555", // Lighter text for secondary content
+  text_tertiary: "#777777", // Even lighter text for tertiary content
+  text_quaternary: "#999999", // Placeholder text color
+};
+
   
-  export const lightTheme = {
-    bg: "#FFFFFF",
-    bgLight: "#F9F9FB",
-    primary: "#4A90E2",
-    primaryHover: "#006BB3",
-    text_primary: "#2D2D2D",
-    text_secondary: "#7A7A7A",
-    card: "#FFFFFF",
-    button: "#4A90E2",
-    white: "#FFFFFF",
-    black: "#000000",
-  };
+  
+  
   
 
 // export const darkTheme = {

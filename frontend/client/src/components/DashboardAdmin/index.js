@@ -1,16 +1,21 @@
-// src/components/DashboardAdmin/index.js
 import React from "react";
 import styled from "styled-components";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./DashboardAdmin.css";
 
-// Import themes
-import { lightTheme } from "../../themes/colors"; // Use lightTheme instead of darkTheme
+// Define the colors directly at the top of the file
+const bg = "#F5F5F5"; // Light background color
+const primary = "#4A90E2"; // Strong primary color for headers, buttons
+const primaryHover = "#357ABD"; // Darker shade for hover
+const white = "#FFFFFF"; // White color
+const card = "#FFFFFF"; // White card background
+const text_primary = "#333333"; // Dark text for primary content
+const text_secondary = "#555555"; // Slightly lighter text for secondary content
 
 // Styled Components for different sections
 const DashboardContainer = styled.div`
   padding: 2rem;
-  background-color: ${({ theme }) => theme.bg};
+  background-color: ${bg};
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
@@ -19,7 +24,7 @@ const DashboardContainer = styled.div`
 const Header = styled.h2`
   text-align: center;
   font-size: 2.5rem;
-  color: ${({ theme }) => theme.primary};
+  color: ${primary};
   margin-top: 2rem;
 `;
 
@@ -55,12 +60,12 @@ const LogoContainer = styled.div`
 
 const InfoContainer = styled.div`
   text-align: left;
-  color: ${({ theme }) => theme.text_primary};
+  color: ${text_primary};
 `;
 
 const HackathonButton = styled.button`
-  background-color: ${({ theme }) => theme.primary};
-  color: ${({ theme }) => theme.white};
+  background-color: ${primary};
+  color: ${white};
   font-size: 1.2rem;
   padding: 1rem 2rem;
   border: none;
@@ -73,10 +78,11 @@ const HackathonButton = styled.button`
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 
   &:hover {
-    background-color: ${({ theme }) => theme.primaryHover || theme.primary};
+    background-color: ${primaryHover};
   }
 `;
 
+// New card style based on the second code snippet
 const HackathonCardContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -86,43 +92,105 @@ const HackathonCardContainer = styled.div`
 `;
 
 const HackathonCard = styled.div`
-  width: 300px;
-  padding: 1.5rem;
-  background-color: ${({ theme }) => theme.card};
-  border-radius: 10px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease;
+  width: 330px;
+  height: 490px;
+  background-color: ${card};
   cursor: pointer;
-
+  border-radius: 10px;
+  box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  padding: 26px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transition: all 0.5s ease-in-out;
+  
   &:hover {
-    transform: translateY(-8px);
+    transform: translateY(-10px);
+    box-shadow: 0 0 50px 4px rgba(0, 0, 0, 0.6);
+    filter: brightness(1.1);
   }
+`;
 
-  .card-title {
-    color: ${({ theme }) => theme.primary};
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-  }
+const Image = styled.img`
+  width: 100%;
+  height: 180px;
+  background-color: ${white};
+  border-radius: 10px;
+  box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.3);
+`;
 
-  .card-body {
-    color: ${({ theme }) => theme.text_secondary};
-    font-size: 1rem;
-  }
+const Tags = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+`;
+
+const Tag = styled.span`
+  font-size: 12px;
+  color: ${primary};
+  background-color: ${primary + "15"};
+  padding: 2px 8px;
+  border-radius: 10px;
+`;
+
+const Title = styled.div`
+  font-size: 20px;
+  font-weight: 600;
+  color: ${text_secondary};
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+`;
+
+const Date = styled.div`
+  font-size: 12px;
+  color: ${text_secondary + "80"};
+`;
+
+const Description = styled.div`
+  font-weight: 400;
+  color: ${text_secondary + "99"};
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 `;
 
 const DashboardAdmin = () => {
   // Mock data for hackathons
   const previousHackathons = [
-    { id: 1, name: "Hackathon 1", description: "Description for Hackathon 1" },
-    { id: 2, name: "Hackathon 2", description: "Description for Hackathon 2" },
+    {
+      id: 1,
+      name: "Hackathon 1",
+      description: "Description for Hackathon 1",
+      image: "https://via.placeholder.com/300x180",
+      tags: ["AI", "ML", "Blockchain"],
+    },
+    {
+      id: 2,
+      name: "Hackathon 2",
+      description: "Description for Hackathon 2",
+      image: "https://via.placeholder.com/300x180",
+      tags: ["Web", "React", "JavaScript"],
+    },
   ];
 
   const ongoingHackathons = [
-    { id: 1, name: "Ongoing Hackathon 1", description: "Ongoing event details." },
+    {
+      id: 1,
+      name: "Ongoing Hackathon 1",
+      description: "Ongoing event details.",
+      image: "https://via.placeholder.com/300x180",
+      tags: ["Python", "Data Science"],
+    },
   ];
 
   return (
-    <DashboardContainer theme={lightTheme}> {/* Use lightTheme here */}
+    <DashboardContainer>
       {/* Organization Logo and Info Section */}
       <InfoSection>
         <LogoContainer>
@@ -142,20 +210,25 @@ const DashboardAdmin = () => {
       </InfoSection>
 
       {/* Admin Panel Header */}
-      <Header theme={lightTheme}>Admin Panel</Header> {/* Use lightTheme here */}
+      <Header>Admin Panel</Header>
 
       {/* Button to Add New Hackathon */}
-      <HackathonButton theme={lightTheme}>Add New Hackathon</HackathonButton> {/* Use lightTheme here */}
+      <HackathonButton>Add New Hackathon</HackathonButton>
 
       {/* Section for Previous Hackathons */}
       <h3>Previous Hackathons</h3>
       <HackathonCardContainer>
         {previousHackathons.map((hackathon) => (
-          <HackathonCard key={hackathon.id} theme={lightTheme}> {/* Use lightTheme here */}
-            <h4 className="card-title">{hackathon.name}</h4>
-            <div className="card-body">
-              <p>{hackathon.description}</p>
-            </div>
+          <HackathonCard key={hackathon.id}>
+            <Image src={hackathon.image} />
+            <Tags>
+              {hackathon.tags?.map((tag, index) => (
+                <Tag key={index}>{tag}</Tag>
+              ))}
+            </Tags>
+            <Title>{hackathon.name}</Title>
+            <Date>2025-01-23</Date> {/* You can add the actual date */}
+            <Description>{hackathon.description}</Description>
           </HackathonCard>
         ))}
       </HackathonCardContainer>
@@ -164,11 +237,16 @@ const DashboardAdmin = () => {
       <h3>Ongoing Hackathons</h3>
       <HackathonCardContainer>
         {ongoingHackathons.map((hackathon) => (
-          <HackathonCard key={hackathon.id} theme={lightTheme}> {/* Use lightTheme here */}
-            <h4 className="card-title">{hackathon.name}</h4>
-            <div className="card-body">
-              <p>{hackathon.description}</p>
-            </div>
+          <HackathonCard key={hackathon.id}>
+            <Image src={hackathon.image} />
+            <Tags>
+              {hackathon.tags?.map((tag, index) => (
+                <Tag key={index}>{tag}</Tag>
+              ))}
+            </Tags>
+            <Title>{hackathon.name}</Title>
+            <Date>2025-01-23</Date> {/* You can add the actual date */}
+            <Description>{hackathon.description}</Description>
           </HackathonCard>
         ))}
       </HackathonCardContainer>
