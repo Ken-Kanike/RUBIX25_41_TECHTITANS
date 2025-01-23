@@ -35,24 +35,24 @@ const StyledLink = styled.a`
   }
 `;
 
-const UserSignIn = () => {
+const AdminSignIn = () => {
   const navigate = useNavigate(); // Initialize navigate function
 
-  const handleSignIn = (e) => {
+  const handleLogin = (e) => {
     e.preventDefault();
-    alert("Signed in successfully!");
-    navigate("/user-dashboard");
+    alert("Admin Signed in successfully!");
+    navigate("/admin-dashboard"); // Navigate to the admin dashboard
   };
 
   const redirectToRegister = () => {
-    navigate("/user-register"); // Navigate to UserRegister route
+    navigate("/admin-register"); // Navigate to User Register route
   };
 
   return (
     <SignInContainer>
-      <Card className="card">
-        <h2>Sign In</h2>
-        <form onSubmit={handleSignIn}>
+      <Card>
+        <h2>Admin Sign In</h2>
+        <form onSubmit={handleLogin}>
           <div className="mb-3">
             <label htmlFor="email" className="form-label">
               Email address
@@ -90,4 +90,4 @@ const UserSignIn = () => {
   );
 };
 
-export default UserSignIn;
+export default AdminSignIn;

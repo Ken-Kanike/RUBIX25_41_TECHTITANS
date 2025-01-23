@@ -41,43 +41,41 @@ const SubmitButton = styled.button`
   }
 `;
 
-
-
-const UserRegister = () => {
+const AdminRegister = () => {
   const navigate = useNavigate(); // Initialize navigate function
+
   const handleRegistration = (e) => {
     e.preventDefault();
-    alert("Registration Completed!");
-    navigate("/user-dashboard");
-    
+    alert("Admin Registration Completed!");
+    navigate("/admin-dashboard"); // Navigate to the admin dashboard
   };
 
   return (
     <RegisterContainer>
       <FormCard>
-        <h2>User Registration</h2>
+        <h2>Admin Registration</h2>
         <form onSubmit={handleRegistration}>
           <div className="mb-3">
-            <label htmlFor="name" className="form-label">
-              Full Name
+            <label htmlFor="orgName" className="form-label">
+              Organization Name
             </label>
             <input
               type="text"
               className="form-control"
-              id="name"
-              placeholder="Enter your full name"
+              id="orgName"
+              placeholder="Enter your organization name"
               required
             />
           </div>
           <div className="mb-3">
             <label htmlFor="email" className="form-label">
-              Email
+              Email Address
             </label>
             <input
               type="email"
               className="form-control"
               id="email"
-              placeholder="Enter your email"
+              placeholder="Enter your email address"
               required
             />
           </div>
@@ -90,102 +88,76 @@ const UserRegister = () => {
               className="form-control"
               id="phone"
               placeholder="Enter your phone number"
-            />
-          </div>
-          <div className="mb-3">
-            <label htmlFor="profilePic" className="form-label">
-              Profile Picture
-            </label>
-            <input type="file" className="form-control" id="profilePic" />
-          </div>
-          <h4>Institution Info</h4>
-          <div className="mb-3">
-            <label htmlFor="collegeName" className="form-label">
-              College Name
-            </label>
-            <input
-              type="text"
-              className="form-control"
-              id="collegeName"
-              placeholder="Enter your college name"
               required
             />
           </div>
           <div className="mb-3">
-            <label htmlFor="year" className="form-label">
-              Year
+            <label htmlFor="orgLogo" className="form-label">
+              Organization Logo
             </label>
-            <select className="form-select" id="year" required>
-              <option value="">Select year</option>
-              <option value="1st">1st Year</option>
-              <option value="2nd">2nd Year</option>
-              <option value="3rd">3rd Year</option>
-              <option value="4th">4th Year</option>
-            </select>
+            <input type="file" className="form-control" id="orgLogo" />
           </div>
+          <h4>Admin Info</h4>
           <div className="mb-3">
-            <label htmlFor="stream" className="form-label">
-              Stream
+            <label htmlFor="adminName" className="form-label">
+              Admin Name
             </label>
             <input
               type="text"
               className="form-control"
-              id="stream"
-              placeholder="Enter your stream (e.g., Engineering, Arts)"
+              id="adminName"
+              placeholder="Enter admin's full name"
               required
             />
           </div>
           <div className="mb-3">
-            <label htmlFor="branch" className="form-label">
-              Branch
+            <label htmlFor="designation" className="form-label">
+              Designation
             </label>
             <input
               type="text"
               className="form-control"
-              id="branch"
-              placeholder="Enter your branch (e.g., CSE, ECE)"
+              id="designation"
+              placeholder="Enter your designation"
               required
             />
           </div>
           <div className="mb-3">
-            <label htmlFor="resume" className="form-label">
-              Upload Resume (PDF)
+            <label htmlFor="password" className="form-label">
+              Password
             </label>
-            <input type="file" className="form-control" id="resume" accept=".pdf" />
+            <input
+              type="password"
+              className="form-control"
+              id="password"
+              placeholder="Enter a secure password"
+              required
+            />
           </div>
           <div className="mb-3">
-            <label htmlFor="github" className="form-label">
-              GitHub Profile
+            <label htmlFor="confirmPassword" className="form-label">
+              Confirm Password
+            </label>
+            <input
+              type="password"
+              className="form-control"
+              id="confirmPassword"
+              placeholder="Confirm your password"
+              required
+            />
+          </div>
+          <div className="mb-3">
+            <label htmlFor="website" className="form-label">
+              Organization Website
             </label>
             <input
               type="url"
               className="form-control"
-              id="github"
-              placeholder="Enter your GitHub profile link"
+              id="website"
+              placeholder="Enter your organization website link"
             />
           </div>
-          <div className="mb-3">
-            <label htmlFor="portfolio" className="form-label">
-              Portfolio Link
-            </label>
-            <input
-              type="url"
-              className="form-control"
-              id="portfolio"
-              placeholder="Enter your portfolio link"
-            />
-          </div>
-          <div className="mb-3">
-            <label htmlFor="skills" className="form-label">
-              Skills (Type and Select)
-            </label>
-            <input
-              type="text"
-              className="form-control"
-              id="skills"
-              placeholder="Enter skills separated by commas"
-            />
-          </div>
+        
           <SubmitButton type="submit">Complete Registration</SubmitButton>
         </form>
       </FormCard>
@@ -193,4 +165,4 @@ const UserRegister = () => {
   );
 };
 
-export default UserRegister;
+export default AdminRegister;

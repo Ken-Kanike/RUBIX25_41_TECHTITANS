@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import UserSignIn from "./UserSignIn"; // Import your JSX component
+import AdminSignIn from "./AdminSignIn";
 
 const SignInPage = styled.div`
   background-color: ${(props) => props.theme.bg};
@@ -41,7 +42,7 @@ const SignIn = () => {
     if (selectedOption === "user") {
       return <UserSignIn />;
     } else if (selectedOption === "admin") {
-      return <h2>Admin Sign-In Page</h2>; // Add admin component if needed
+      return <AdminSignIn/>; // Add admin component if needed
     }
     return (
       <Container>

@@ -2,7 +2,7 @@ import React from "react";
 import "./dashboardUSER.css";
 import Navbar from "../DashboardUnavbar"; // Import Navbar
 
-const Dashboard = () => {
+const DashboardUSER = () => {
     const hackathons = [
         { name: "AI Challenge", details: "A hackathon for AI enthusiasts." },
         { name: "Blockchain Dev", details: "Build projects with Blockchain." },
@@ -53,4 +53,4 @@ const Dashboard = () => {
     );
 };
 
-export default Dashboard;
+export default DashboardUSER;
