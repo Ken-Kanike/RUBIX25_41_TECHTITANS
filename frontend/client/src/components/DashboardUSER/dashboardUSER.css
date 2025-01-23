@@ -1,117 +1,242 @@
-
 .dashboard-container {
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: #9dbebb;
     text-align: center;
-}
-
-
-.search-container {
+    animation: fadeIn 0.5s ease-in-out; 
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .user-info-container {
+    padding: 20px;
+    animation: slideInTop 1s ease-in-out; 
+  }
+  
+  @keyframes slideInTop {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  .user-info-container h2 {
+    font-size: 2.5rem;
+    font-style: bold;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .user-info-container p {
+    font-size: 16px;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .search-container {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
-}
-
-
-.search-input {
+    animation: slideInUp 0.5s ease-in-out; 
+  }
+  
+  @keyframes slideInUp {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .search-input {
     padding: 10px;
     font-size: 16px;
     border-radius: 50px;
     border: 2px solid #ccc;
-    width: 300px;  
+    width: 300px;
     margin-right: 10px;
     outline: none;
-}
-
-
-.search-btn {
+    transition: border-color 0.3s ease-in-out; 
+  }
+  
+  .search-input:focus {
+    border-color: #854CE6; 
+  }
+  
+  .search-btn {
     padding: 10px 20px;
     background-color: #854CE6;
     border: none;
-    border-radius: 25px; 
+    border-radius: 25px;
     color: #fff;
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s;
-}
-
-.search-btn:hover {
+  }
+  
+  .search-btn:hover {
     background-color: #5e30b1;
-}
-
-
-.search-btn i {
+  }
+  
+  .search-btn i {
     font-size: 18px;
-}
-
-
-.hackathon-cards {
-    display: grid;
+  }
+  
+  .coming-text-container {
+    margin-top: 100px;
+    animation: fadeInUp 0.5s ease-in-out; 
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .coming-text-container h3 {
+    font-size: 1.5rem;
+    color: #f7f3f3 !important;
+    margin: 10px 0;
+  }
+  
+  .hackathon-cards {
+    display: flex;
+    justify-content: center;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 20px;
     padding: 20px;
-}
-
-.hackathon-card {
-    background-color: #fff;
+    animation: fadeInUp 0.5s ease-in-out; 
+  }
+  
+  .hackathon-card {
+    background-color: #ffffff6d;
     border-radius: 12px;
     padding: 20px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     height: auto;
-}
-
-.hackathon-card:hover {
+  }
+  
+  .hackathon-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-
-.hackathon-image {
+  }
+  
+  .hackathon-image {
     width: 100%;
     height: 200px;
     overflow: hidden;
     margin-bottom: 15px;
     border-radius: 10px;
-}
-
-.hackathon-img {
+  }
+  
+  .hackathon-img {
+    width:250px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .hackathon-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .hackathon-card p {
+    font-size: 1rem;
+    color: #666;
+    margin: 0;
+  }
+  .joined-hackathons-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+    animation: fadeInUp 0.5s ease-in-out;
+  }
+  
+  .joined-hackathons-container h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 10px 0;
+  } 
+  
+  .joined-hackathon-card {
+    margin-bottom: 15px;
+    display: flex; 
+    flex-direction: row; 
+    align-items: center;
+    width: 100%; 
+    max-width: 700px;
+    background-color: #ffffff6d;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: cardHover 0.3s ease-in-out;
+  }
+  
+  @keyframes cardHover {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.05);
+    }
+  }
+  
+  .joined-hackathon-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .joined-hackathon-image {
+    width: 150px; 
+    height: 100px; 
+    overflow: hidden;
+    margin-right: 20px;
+    border-radius: 10px;
+  }
+  
+  .joined-hackathon-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
-}
-
-
-.hackathon-card h3 {
+  }
+  
+  .joined-hackathon-card-content { 
+    flex-grow: 1; 
+  }
+  
+  .joined-hackathon-card h3 {
     font-size: 1.5rem;
     color: #333;
-    margin: 10px 0;
-}
-
-.hackathon-card p {
+    margin-bottom: 5px;
+  }
+  
+  .joined-hackathon-card p {
     font-size: 1rem;
     color: #666;
     margin: 0;
-}
-.divider-bar {
-    width: 100%;
-    height: 3px;
-    background-color: #854ce6; 
-    margin: 30px 0; 
-  }
-  
-  .joined-hackathons-container {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  .joined-hackathon-item {
-    padding: 15px;
-    background-color: #e0e0e0;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }

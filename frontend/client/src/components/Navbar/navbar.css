@@ -75,6 +75,7 @@
     gap: 10px; /* Space between logo image and text */
     font-size: 1.5rem;
     font-weight: bold;
+    margin-left: 10px;
     color: #ffffff;
     text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
 }

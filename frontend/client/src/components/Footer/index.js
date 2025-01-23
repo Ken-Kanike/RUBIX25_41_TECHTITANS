@@ -18,7 +18,7 @@ const Footer = () => {
                     © {currentYear} HackSpace. All rights reserved.
                 </p>
                 <div className="social-links">
-                    <a href="https://twitter.com" target="_blank" rel="noreferrer">
+                    {/* <a href="https://twitter.com" target="_blank" rel="noreferrer">
                         <img src="/twitter-logo.png" alt="Twitter" className="social-icon" />
                     </a>
                     <a href="https://github.com" target="_blank" rel="noreferrer">
@@ -26,7 +26,7 @@ const Footer = () => {
                     </a>
                     <a href="https://linkedin.com" target="_blank" rel="noreferrer">
                         <img src="/linkedin-logo.png" alt="LinkedIn" className="social-icon" />
-                    </a>
+                    </a> */}
                 </div>
             </div>
         </footer>

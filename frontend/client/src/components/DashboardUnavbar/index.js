@@ -18,7 +18,10 @@ const UserNavbar = () => {
 
     return (
         <nav className="navbar">
-            <div className="navbar-logo">Hackathons</div>
+            <div className="navbar-logo">
+                <img src="/logo.png" alt="HackSpace Logo" className="logo-image" />
+                <span>HackSpace</span>
+            </div>
             <ul className="navbar-links">
                 <li><a href="#dashboard">Dashboard</a></li>
                 <li><a href="#profile">Profile</a></li>

@@ -1,6 +1,6 @@
 // src/themes/colors.js
 export const colors = {
-  bg: "#cfdbd5",  // Dark background
+  bg: "#9dbebb",  // Dark background
   bgLight: "#01161e",  // Lighter dark background
   primary: "#5c6b73",  // Primary color
   primaryHover: "#253237",  // Hover effect for primary

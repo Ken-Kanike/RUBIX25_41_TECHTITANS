@@ -42,7 +42,7 @@ const SignInContainer = styled.div`
 `;
 
 const Header = styled.h2`
-  color: ${colors.primary};
+  color: ${colors.text_primary};
   font-size: 2.2rem;
   margin-bottom: 30px;
 `;
