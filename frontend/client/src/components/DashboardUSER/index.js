@@ -12,26 +12,28 @@ const DashboardUSER = () => {
             name: "Tsec Hacks",
             type: "upcoming",
             details: "A hackathon for AI enthusiasts.",
-            progress: "Starts in 3 days and 5 hours",
-            endDate:"2025-2-10",
-            imgurl:
-                "https://firebasestorage.googleapis.com/v0/b/my-firebase-cloud-storgae.appspot.com/o/js-portfolio-web%2FURL-shortner.jpg?alt=media&token=2a290faa-6864-4f8a-ba16-e6a2fa299a24",
+            progress: "",
+            startDate: "22-02-2025",
+            endDate:"25-02-2025",
+            imgurl:  "/hackathon.png",
         },
         {
             name: "Rubix",
             type: "live",
             details: "Build projects with Blockchain.",
-            progress: "Starts in 7 days and 12 hours",
-            imgurl:
-                "https://firebasestorage.googleapis.com/v0/b/my-firebase-cloud-storgae.appspot.com/o/js-portfolio-web%2FFlask-todo.jpg?alt=media&token=caeccdfc-2220-405d-90b8-72f0f5c4d6b4",
+            progress: "",
+            startDate: "22-01-2025",
+            endDate:"25-01-2025",
+            imgurl: "/hackathon.png",
         },
         {
             name: "It's a Hack",
             type: "upcoming",
             details: "Test your skills in Cyber Security.",
             progress: "Starts in 10 days and 3 hours",
-            imgurl:
-                "https://firebasestorage.googleapis.com/v0/b/my-firebase-cloud-storgae.appspot.com/o/js-portfolio-web%2Fface-detection-home.png?alt=media&token=cd491c44-52c2-4f5e-82cd-c4ad57b41aba",
+            startDate: "22-03-2025",
+            endDate:"25-03-2025",
+            imgurl:  "/hackathon.png",
         },
     ];
 
