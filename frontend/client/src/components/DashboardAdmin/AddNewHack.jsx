@@ -15,7 +15,7 @@ const Modal = styled.div`
 `;
 
 const ModalContent = styled.div`
-  background-color: #ffffff;
+  background-color:rgb(201, 201, 206);
   padding: 2rem;
   border-radius: 10px;
   width: 500px;
@@ -41,7 +41,7 @@ const Form = styled.form`
 `;
 
 const FormLabel = styled.label`
-  font-weight: bold;
+  font-weight:1rem;
   color: #333333;
 `;
 

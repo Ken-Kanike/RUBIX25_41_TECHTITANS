@@ -1,7 +1,7 @@
 .hackathon-details-container {
     max-width: 900px;
-    margin: 30px auto;
-    padding: 20px;
+    margin: 200px auto;
+    padding: 50px;
     background-color: #ffffff;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -133,10 +133,13 @@ button.register-btn:hover {
     transform: scale(1.05);
 }
 
+.hackathon-live p{
+    color: rgb(21, 21, 21);
+}
 
 /* hackathon.css 
 
-body {
+body { 
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;

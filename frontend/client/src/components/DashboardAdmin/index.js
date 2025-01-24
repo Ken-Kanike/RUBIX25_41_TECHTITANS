@@ -235,6 +235,19 @@ const DashboardAdmin = () => {
 
   const ongoingHackathons = [
     {
+      name: 'CodeFest 2025',
+      description: 'A global hackathon where innovators create amazing projects.',
+      image: 'https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/7KU227IYG4GXLJUJ55Y3AQTSP4.jpg&w=916', // Replace with actual image URL
+      startDate: 'January 25, 2025',
+      endDate: 'January 28, 2025',
+      tags: ['ongoing'],
+      teams: [
+        { name: 'Team Alpha' },
+        { name: 'Team Beta' },
+        { name: 'Team Gamma' },
+      ],
+    },
+    {
       id: 3,
       name: "Hack the Climate",
       description: "A hackathon focused on developing solutions for climate change challenges.",

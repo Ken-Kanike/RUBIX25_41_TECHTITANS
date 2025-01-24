@@ -1,5 +1,24 @@
+label{
+    color:rgba(64, 63, 74, 0.983);
+    font-family: Impact, 'Arial Bold', sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem; /* Adjust the size as needed */
+    color: #e1e5f2; /* Light text color for contrast on a dark background */
+    background-color: #01161e; /* Dark background for emphasis */
+    padding: 16px 24px; /* Adds spacing around the text */
+    border-radius: 8px; /* Rounds the corners */
+    text-align: center; /* Centers the text */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+    font-weight: bold; /* Makes the text stand out */
+    letter-spacing: 0.5px; /* Adds slight spacing between letters */
+    margin: 20px auto; /* Centers the heading and adds vertical spacing */
+    max-width: fit-content; /* Ensures the background fits the text */
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
 .register-container {
-    padding: 20px;
+    padding: 100px;
     background-color: #f4f4f4;
 }
 
@@ -7,7 +26,7 @@
     max-width: 600px;
     margin: 0 auto;
     background-color: white;
-    padding: 20px;
+    padding: 50px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -36,4 +55,13 @@ button {
 
 button:hover {
     background-color: #0056b3;
+}
+
+.form-actions {
+    display: flex; /* Ensures buttons are arranged horizontally */
+    gap: 16px; /* Adds space between buttons */
+}
+
+.action-button {
+    padding: 8px 16px; /* Optional: Adjusts button padding */
 }

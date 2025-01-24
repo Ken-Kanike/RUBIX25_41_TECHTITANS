@@ -57,7 +57,7 @@ const Register = () => {
                         <div key={index}>
                             <input
                                 type="text"
-                                placeholder={`Member ${index + 1}`}
+                                placeholder={`Enter HackSpace Member ${index + 1} Username `}
                                 value={member}
                                 onChange={(e) =>
                                     handleMemberChange(index, e.target.value)
@@ -71,11 +71,11 @@ const Register = () => {
                     </button>
                 </div>
                 <div className="form-actions">
-                    <button type="button" onClick={handleSubmit}>
+                    <button className="action-button" type="button">Find Team Mates</button>
+                    <button className="action-button" type="button">Join a Team</button>
+                    <button className="action-button" type="button" onClick={handleSubmit}>
                         Complete Registration
                     </button>
-                    <button type="button">Find Members</button>
-                    <button type="button">Add Members</button>
                 </div>
             </form>
         </div>
